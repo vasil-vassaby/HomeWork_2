@@ -5,11 +5,9 @@
 # 6782 -> 23
 # 0,56 -> 11
 
-while True:
-    try:
-        number = float(input('Введите число: '))
-        break
-    except:
-        print('Введите вещественное число!')
+number = input('Введите число: ').replace(',', '0')
+sum = 0
+for i in number:
+    sum += int(i)
+print(f'Сумма цифр числа = {sum}')
 
-print(number)
