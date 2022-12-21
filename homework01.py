@@ -5,9 +5,18 @@
 # 6782 -> 23
 # 0,56 -> 11
 
-number = input('Введите число: ').replace(',', '0')
-sum = 0
-for i in number:
-    sum += int(i)
-print(f'Сумма цифр числа = {sum}')
+
+while True:
+    try:
+        number = input('Введите число: ').replace(',', '0')
+        sum = 0
+        for i in number:
+            sum += int(i)
+        print(f'Сумма цифр числа = {sum}')
+        break
+    except:
+        print('Введите число без пробела!')
+
+
+
 
