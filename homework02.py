@@ -5,7 +5,7 @@
 # Для n=4 -> [2, 2.25, 2.37, 2.44]
 # Сумма 9.06
 
-import random
+
 while True:
     try:
         n = int(input('Задайте число n: '))
