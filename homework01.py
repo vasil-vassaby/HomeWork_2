@@ -8,7 +8,7 @@
 
 while True:
     try:
-        number = input('Введите число: ').replace(',', '0')
+        number = input('Введите число: ').replace(',', '0').replace('-', '')
         sum = 0
         for i in number:
             sum += int(i)
